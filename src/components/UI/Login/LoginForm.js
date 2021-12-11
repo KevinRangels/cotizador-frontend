@@ -32,6 +32,7 @@ export const LoginForm = () => {
       <div className="mb-3">
         <input type="password" className="form-control" placeholder="Contraseña" aria-label="Password" />
       </div>
+
       <div className="form-check form-switch">
         <input className="form-check-input" type="checkbox" id="rememberMe" />
         <label className="form-check-label" for="rememberMe">

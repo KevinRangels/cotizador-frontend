@@ -1,27 +1,28 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { PublicRoute } from "./PublicRoute";
-import { PrivateRoute } from "./PrivateRoute";
-import { LoginScreen } from "../pages/Auth/LoginScreen";
-import { ForgotPassword } from "../pages/Auth/ForgotPassword";
-import ScrollToTop from "./helpers/ScrollToTop";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { UpdatedPassword } from "../pages/Auth/UpdatedPassword";
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { PrivateRoute } from './PrivateRoute';
+import { LoginScreen } from '../pages/Auth/LoginScreen';
+import { ToastContainer } from 'react-toastify';
+import { MainRouter } from './MainRouter';
+import ScrollToTop from './helpers/ScrollToTop';
+import 'react-toastify/dist/ReactToastify.css';
+import { main } from '../helpers/layout/main';
+
 export const AppRouter = () => {
+  const [logged, setLogged] = useState(true);
+
+  useEffect(() => {
+    main();
+  }, []);
 
   return (
     <Router>
       <ScrollToTop />
-      <div>
-        <Switch>
-          <Route path="/login" component={LoginScreen} />
-          <Route path="/forgot-password" component={ForgotPassword} />
-          <Route path="/updated-password" component={UpdatedPassword} />
-          <Route path="/user" component={PrivateRoute} />
-          <Route path="/" component={PublicRoute} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/login" component={LoginScreen} />
+        <PrivateRoute path="/" component={MainRouter} isAuthenticated={logged} />
+        <Redirect to="/login" />
+      </Switch>
       <ToastContainer />
     </Router>
   );

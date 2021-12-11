@@ -1,31 +1,12 @@
-import React from "react";
-import { Route, Redirect, Switch, useRouteMatch } from "react-router-dom";
-import { Footer } from "../components/UI/Footer";
-import { Header } from "../components/UI/Header/Header";
-import { Dashboard } from "../pages/User/Dashboard/Dashboard";
-import { MyOrders } from "../pages/User/MyOrders/MyOrders";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Redirect, Route } from 'react-router-dom';
 
-export const PrivateRoute = () => {
-  return (
-    <>
-      <Header />
-      <div class="wrapper">
-        <div class="">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-4">
-              </div>
-              <div class="col-lg-9 col-md-8">
-                <Switch>
-                  <Route path="/user/dashboard" component={Dashboard} />
-                  <Route path="/user/orders" component={MyOrders} />
-                </Switch>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Footer />
-    </>
-  );
+export const PrivateRoute = ({ isAuthenticated, component: Component, ...rest }) => {
+  return <Route {...rest} component={(props) => (isAuthenticated ? <Component {...props} /> : <Redirect to="/login" />)} />;
+};
+
+PrivateRoute.propTypes = {
+  isAuthenticated: PropTypes.bool.isRequired,
+  component: PropTypes.func.isRequired,
 };
