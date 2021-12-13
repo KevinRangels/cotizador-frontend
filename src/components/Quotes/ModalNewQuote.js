@@ -1,4 +1,5 @@
 import React from 'react';
+import { Select } from '../UI/Forms/Select';
 
 export const ModalNewQuote = () => {
   return (
@@ -26,16 +27,7 @@ export const ModalNewQuote = () => {
                           </div>
                           <div className="row">
                             <div className="col-md-12">
-                              <label>Seleccione el tipo de cliente a cotizar</label>
-                              <select class="form-control" name="choices-category" id="choices-category-edit">
-                                <option value="Choice 1" selected="">
-                                  Seleccionar
-                                </option>
-                                <option value="Choice 2">Real Estate</option>
-                                <option value="Choice 3">Electronics</option>
-                                <option value="Choice 4">Clothing</option>
-                                <option value="Choice 5">Others</option>
-                              </select>
+                              <Select id="type__client" label="Seleccione el tipo de cliente a cotizar" />
                             </div>
                           </div>
                         </div>
@@ -45,15 +37,7 @@ export const ModalNewQuote = () => {
                           </div>
                           <div className="row">
                             <div className="col-md-12">
-                              <label>Tipo de material</label>
-                              <select class="form-control" name="choices-sizes" id="choices-sizes">
-                                <option value="" selected="">
-                                  Seleccionar
-                                </option>
-                                <option value="Choice 1">Super Admin</option>
-                                <option value="Choice 2">Administrador</option>
-                                <option value="Choice 3">Operador</option>
-                              </select>
+                              <Select id="type__material" label="Tipo de material" />
                             </div>
                             <div className="col-md-6">
                               <label>Largo de pieza</label>
