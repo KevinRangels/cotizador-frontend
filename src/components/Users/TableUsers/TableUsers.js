@@ -4,10 +4,10 @@ import { DataTable } from 'simple-datatables';
 export const TableUsers = () => {
   useEffect(() => {
     if (document.getElementById('products-list')) {
-      const dataTableSearch = new DataTable('#products-list', {
+      new DataTable('#products-list', {
         searchable: true,
         fixedHeight: false,
-        perPage: 7,
+        perPage: 2,
       });
     }
   }, []);
@@ -55,7 +55,7 @@ export const TableUsers = () => {
                 <div class="form-check my-auto">
                   <input class="form-check-input" type="checkbox" id="customCheck1" checked />
                 </div>
-                <h6 class="ms-3 my-auto">Sheldon Cooper</h6>
+                <h6 class="ms-3 my-auto">Rjesh Koothrappali</h6>
               </div>
             </td>
             <td class="text-sm">22.986.138</td>
@@ -79,7 +79,7 @@ export const TableUsers = () => {
                 <div class="form-check my-auto">
                   <input class="form-check-input" type="checkbox" id="customCheck1" checked />
                 </div>
-                <h6 class="ms-3 my-auto">Sheldon Cooper</h6>
+                <h6 class="ms-3 my-auto">Howard Wolowitz</h6>
               </div>
             </td>
             <td class="text-sm">22.986.138</td>
