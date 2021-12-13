@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { DataTable } from 'simple-datatables';
 
 export const TableUsers = () => {
+  useEffect(() => {
+    if (document.getElementById('products-list')) {
+      const dataTableSearch = new DataTable('#products-list', {
+        searchable: true,
+        fixedHeight: false,
+        perPage: 7,
+      });
+    }
+  }, []);
   return (
     <div class="table-responsive">
       <table class="table table-flush" id="products-list">
@@ -31,10 +41,7 @@ export const TableUsers = () => {
               <span class="badge badge-danger badge-sm">Operador</span>
             </td>
             <td class="text-sm">
-              <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
-                <i class="fas fa-eye text-secondary"></i>
-              </a>
-              <a href="javascript:;" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit product">
+              <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#newUser" class="mx-3">
                 <i class="fas fa-user-edit text-secondary"></i>
               </a>
               <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete product">
@@ -58,10 +65,7 @@ export const TableUsers = () => {
               <span class="badge badge-warning badge-sm">Super Admin</span>
             </td>
             <td class="text-sm">
-              <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
-                <i class="fas fa-eye text-secondary"></i>
-              </a>
-              <a href="javascript:;" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit product">
+              <a href="javascript:;" class="mx-3" data-bs-toggle="modal" data-bs-target="#newUser">
                 <i class="fas fa-user-edit text-secondary"></i>
               </a>
               <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete product">
@@ -85,10 +89,7 @@ export const TableUsers = () => {
               <span class="badge badge-success badge-sm">Administrador</span>
             </td>
             <td class="text-sm">
-              <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
-                <i class="fas fa-eye text-secondary"></i>
-              </a>
-              <a href="javascript:;" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit product">
+              <a href="javascript:;" class="mx-3" data-bs-toggle="modal" data-bs-target="#newUser">
                 <i class="fas fa-user-edit text-secondary"></i>
               </a>
               <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete product">
