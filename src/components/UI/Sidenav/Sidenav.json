@@ -1,0 +1,44 @@
+{
+  "btns": [
+    {
+      "name": "Dashboard",
+      "route": "/dashboard",
+      "icon": "fas fa-tachometer-alt"
+    },
+    {
+      "name": "Configuraciones",
+      "route": "/configuraciones",
+      "icon": "fas fa-cogs"
+    },
+    {
+      "name": "Cotizador",
+      "route": "/cotizador",
+      "icon": "fas fa-calculator"
+    },
+    {
+      "name": "Usuarios",
+      "route": "/usuarios",
+      "icon": "fas fa-users"
+    },
+    {
+      "name": "Punto de venta",
+      "route": "/pos",
+      "icon": "fas fa-cash-register"
+    },
+    {
+      "name": "Contable",
+      "route": "/contable",
+      "icon": "fas fa-file-invoice-dollar"
+    },
+    {
+      "name": "Inventario",
+      "route": "/inventario",
+      "icon": "fas fa-boxes"
+    },
+    {
+      "name": "Línea de producción",
+      "route": "/linea-produccion",
+      "icon": "fas fa-network-wired"
+    }
+  ]
+}
