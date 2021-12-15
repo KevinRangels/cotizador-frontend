@@ -1,4 +1,5 @@
 import React from 'react';
+import { ModalGenerateQuote } from '../../components/Quotes/ModalGenerateQuote';
 import { ModalNewQuote } from '../../components/Quotes/ModalNewQuote';
 import { TableQuote } from '../../components/Quotes/TableQuote';
 
@@ -25,7 +26,7 @@ export const QuoteScreen = () => {
             </div>
             <TableQuote />
             <div className="d-flex justify-content-end mt-4 card-footer">
-              <button class="btn btn-icon bg-gradient-primary" type="button">
+              <button class="btn btn-icon bg-gradient-primary" type="button" data-bs-toggle="modal" data-bs-target="#newGenerateQuote">
                 <span class="btn-inner--text">Cotizar</span>
               </button>
             </div>
@@ -33,6 +34,7 @@ export const QuoteScreen = () => {
         </div>
       </div>
       <ModalNewQuote />
+      <ModalGenerateQuote />
     </>
   );
 };
