@@ -3,6 +3,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import { Footer } from '../components/UI/Footer';
 import { Navbar } from '../components/UI/Navbar/Navbar';
 import { Sidenav } from '../components/UI/Sidenav/Sidenav';
+import { ConfigurationsScreen } from '../pages/Configurations/ConfigurationsScreen';
 import { DashboardScreen } from '../pages/Dashboard/DashboardScreen';
 import { HomeScreen } from '../pages/Home/HomeScreen';
 import { QuoteScreen } from '../pages/Quote/QuoteScreen';
@@ -17,6 +18,7 @@ export const MainRouter = () => {
         <div class="container-fluid py-4">
           <Switch>
             <Route path="/dashboard" component={DashboardScreen} />
+            <Route path="/configuraciones" component={ConfigurationsScreen} />
             <Route path="/usuarios" component={UsersScreen} />
             <Route path="/cotizador" component={QuoteScreen} />
             <Route path="/pos" component={HomeScreen} />
