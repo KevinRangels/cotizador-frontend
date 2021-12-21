@@ -20,30 +20,6 @@ export const Sidenav = () => {
           {Buttons.btns.map((data, i) => (
             <SidenavButton key={i} route={data.route} name={data.name} icon={data.icon} type={data.type} options={data.options} />
           ))}
-          <li class="nav-item">
-            <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link " aria-controls="dashboardsExamples" role="button" aria-expanded="false">
-              <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-                {/* <i className={icon}></i> */}
-              </div>
-              <span class="nav-link-text ms-1">Inventario</span>
-            </a>
-            <div class="collapse " id="dashboardsExamples">
-              <ul class="nav ms-4 ps-3">
-                <li class="nav-item ">
-                  <a class="nav-link " href="../../pages/dashboards/default.html">
-                    <span class="sidenav-mini-icon"> P </span>
-                    <span class="sidenav-normal"> Productos </span>
-                  </a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link " href="../../pages/dashboards/automotive.html">
-                    <span class="sidenav-mini-icon"> MP </span>
-                    <span class="sidenav-normal"> Materia Prima </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
           <li className="nav-item">
             <hr className="horizontal dark" />
             <h6 className="ps-4  ms-2 text-uppercase text-xs font-weight-bolder opacity-6">DOCS</h6>
