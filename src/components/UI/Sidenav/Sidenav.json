@@ -3,42 +3,62 @@
     {
       "name": "Dashboard",
       "route": "/dashboard",
-      "icon": "fas fa-tachometer-alt"
+      "icon": "fas fa-tachometer-alt",
+      "type": 1
     },
     {
       "name": "Configuraciones",
       "route": "/configuraciones",
-      "icon": "fas fa-cogs"
+      "icon": "fas fa-cogs",
+      "type": 1
     },
     {
       "name": "Cotizador",
       "route": "/cotizador",
-      "icon": "fas fa-calculator"
+      "icon": "fas fa-calculator",
+      "type": 1
     },
     {
       "name": "Usuarios",
       "route": "/usuarios",
-      "icon": "fas fa-users"
-    },
-    {
-      "name": "Punto de venta",
-      "route": "/pos",
-      "icon": "fas fa-cash-register"
-    },
-    {
-      "name": "Contable",
-      "route": "/contable",
-      "icon": "fas fa-file-invoice-dollar"
+      "icon": "fas fa-users",
+      "type": 1
     },
     {
       "name": "Inventario",
       "route": "/inventario",
-      "icon": "fas fa-boxes"
+      "icon": "fas fa-boxes",
+      "type": 2,
+      "options": [
+        {
+          "name": "Materia Prima",
+          "route": "/inventario-materia-prima",
+          "miniIcon": "MP"
+        },
+        {
+          "name": "Productos",
+          "route": "/inventario-productos",
+          "miniIcon": "P"
+        }
+      ]
+    },
+    {
+      "name": "Punto de venta",
+      "route": "/pos",
+      "icon": "fas fa-cash-register",
+      "type": 1
+    },
+    {
+      "name": "Contable",
+      "route": "/contable",
+      "icon": "fas fa-file-invoice-dollar",
+      "type": 1
     },
     {
       "name": "Línea de producción",
       "route": "/linea-produccion",
-      "icon": "fas fa-network-wired"
+      "icon": "fas fa-network-wired",
+      "type": 1
     }
   ]
 }

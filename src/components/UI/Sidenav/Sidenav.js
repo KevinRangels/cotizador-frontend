@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Buttons from './Sidenav.json';
 import { SidenavButton } from './SidenavButton';
+import iconBrand from '../../../assets/images/brand/logo_main.svg';
 
 export const Sidenav = () => {
   return (
@@ -9,16 +10,40 @@ export const Sidenav = () => {
       <div className="sidenav-header">
         <i className="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
         <a className="navbar-brand m-0" href=" https://demos.creative-tim.com/marketplace/soft-ui-dashboard-pro/pages/dashboards/default.html " target="_blank">
-          <img src="../../assets/img/logo-ct.png" className="navbar-brand-img h-100" alt="main_logo" />
-          <span className="ms-1 font-weight-bold">Decolaser</span>
+          <img src={iconBrand} className="navbar-brand-img h-100" alt="main_logo" />
+          {/* <span className="ms-1 font-weight-bold">Decolaser</span> */}
         </a>
       </div>
       <hr className="horizontal dark mt-0" />
       <div className="collapse navbar-collapse  w-auto h-auto max-height-vh-100 h-100" id="sidenav-collapse-main">
         <ul className="navbar-nav">
           {Buttons.btns.map((data, i) => (
-            <SidenavButton key={i} route={data.route} name={data.name} icon={data.icon} />
+            <SidenavButton key={i} route={data.route} name={data.name} icon={data.icon} type={data.type} options={data.options} />
           ))}
+          <li class="nav-item">
+            <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link " aria-controls="dashboardsExamples" role="button" aria-expanded="false">
+              <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
+                {/* <i className={icon}></i> */}
+              </div>
+              <span class="nav-link-text ms-1">Inventario</span>
+            </a>
+            <div class="collapse " id="dashboardsExamples">
+              <ul class="nav ms-4 ps-3">
+                <li class="nav-item ">
+                  <a class="nav-link " href="../../pages/dashboards/default.html">
+                    <span class="sidenav-mini-icon"> P </span>
+                    <span class="sidenav-normal"> Productos </span>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link " href="../../pages/dashboards/automotive.html">
+                    <span class="sidenav-mini-icon"> MP </span>
+                    <span class="sidenav-normal"> Materia Prima </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
           <li className="nav-item">
             <hr className="horizontal dark" />
             <h6 className="ps-4  ms-2 text-uppercase text-xs font-weight-bolder opacity-6">DOCS</h6>

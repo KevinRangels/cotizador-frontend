@@ -22,6 +22,8 @@ export const MainRouter = () => {
             <Route path="/usuarios" component={UsersScreen} />
             <Route path="/cotizador" component={QuoteScreen} />
             <Route path="/pos" component={HomeScreen} />
+            <Route path="/inventario-materia-prima" component={HomeScreen} />
+            <Route path="/inventario-productos" component={HomeScreen} />
             {/* <Route exact path="/hero/:heroId" component={HeroScreen} />
       <Route exact path="/dc" component={DcScreen} />
       <Route exact path="/search" component={SearchScreen} /> */}
