@@ -6,6 +6,8 @@ import { Sidenav } from '../components/UI/Sidenav/Sidenav';
 import { ConfigurationsScreen } from '../pages/Configurations/ConfigurationsScreen';
 import { DashboardScreen } from '../pages/Dashboard/DashboardScreen';
 import { HomeScreen } from '../pages/Home/HomeScreen';
+import { InventoryProducts } from '../pages/Inventory/InventoryProducts';
+import { InventoryRawMAterial } from '../pages/Inventory/InventoryRawMAterial';
 import { QuoteScreen } from '../pages/Quote/QuoteScreen';
 import { UsersScreen } from '../pages/Users/UsersScreen';
 
@@ -22,8 +24,8 @@ export const MainRouter = () => {
             <Route path="/usuarios" component={UsersScreen} />
             <Route path="/cotizador" component={QuoteScreen} />
             <Route path="/pos" component={HomeScreen} />
-            <Route path="/inventario-materia-prima" component={HomeScreen} />
-            <Route path="/inventario-productos" component={HomeScreen} />
+            <Route path="/inventario-materia-prima" component={InventoryRawMAterial} />
+            <Route path="/inventario-productos" component={InventoryProducts} />
             {/* <Route exact path="/hero/:heroId" component={HeroScreen} />
       <Route exact path="/dc" component={DcScreen} />
       <Route exact path="/search" component={SearchScreen} /> */}
