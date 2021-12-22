@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import PerfectScrollbar from 'perfect-scrollbar';
 import Buttons from './Sidenav.json';
 import { SidenavButton } from './SidenavButton';
 import iconBrand from '../../../assets/images/brand/logo_main.svg';
 
 export const Sidenav = () => {
+  useEffect(() => {
+    if (document.getElementsByClassName('sidenav')[0]) {
+      var sidebar = document.querySelector('.sidenav');
+      var ps1 = new PerfectScrollbar(sidebar);
+    }
+
+    if (document.getElementsByClassName('navbar-collapse')[0]) {
+      var fixedplugin = document.querySelector('.navbar-collapse');
+      var ps2 = new PerfectScrollbar(fixedplugin);
+    }
+  }, []);
   return (
     <aside className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " id="sidenav-main">
       <div className="sidenav-header">
