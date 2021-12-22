@@ -16,7 +16,19 @@
       "name": "Cotizador",
       "route": "/cotizador",
       "icon": "fas fa-calculator",
-      "type": 1
+      "type": 2,
+      "options": [
+        {
+          "name": "Cotizador con puestos",
+          "route": "/cotizador-puesto",
+          "miniIcon": "C"
+        },
+        {
+          "name": "Cotizador de productos",
+          "route": "/cotizador-productos",
+          "miniIcon": "CP"
+        }
+      ]
     },
     {
       "name": "Usuarios",

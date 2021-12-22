@@ -8,6 +8,8 @@ import { DashboardScreen } from '../pages/Dashboard/DashboardScreen';
 import { HomeScreen } from '../pages/Home/HomeScreen';
 import { InventoryProducts } from '../pages/Inventory/InventoryProducts';
 import { InventoryRawMaterial } from '../pages/Inventory/InventoryRawMaterial';
+import { QuoteByPositionScreen } from '../pages/Quote/QuoteByPositionScreen';
+import { QuoteProductsScreen } from '../pages/Quote/QuoteProductsScreen';
 import { QuoteScreen } from '../pages/Quote/QuoteScreen';
 import { UsersScreen } from '../pages/Users/UsersScreen';
 
@@ -22,7 +24,9 @@ export const MainRouter = () => {
             <Route path="/dashboard" component={DashboardScreen} />
             <Route path="/configuraciones" component={ConfigurationsScreen} />
             <Route path="/usuarios" component={UsersScreen} />
-            <Route path="/cotizador" component={QuoteScreen} />
+            <Route path="/cotizador-puesto" component={QuoteByPositionScreen} />
+            <Route path="/cotizador-productos" component={QuoteProductsScreen} />
+
             <Route path="/pos" component={HomeScreen} />
             <Route path="/inventario-materia-prima" component={InventoryRawMaterial} />
             <Route path="/inventario-productos" component={InventoryProducts} />

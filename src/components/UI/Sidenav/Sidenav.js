@@ -8,13 +8,13 @@ import iconBrand from '../../../assets/images/brand/logo_main.svg';
 export const Sidenav = () => {
   useEffect(() => {
     if (document.getElementsByClassName('sidenav')[0]) {
-      var sidebar = document.querySelector('.sidenav');
-      var ps1 = new PerfectScrollbar(sidebar);
+      let sidebar = document.querySelector('.sidenav');
+      let ps1 = new PerfectScrollbar(sidebar);
     }
 
     if (document.getElementsByClassName('navbar-collapse')[0]) {
-      var fixedplugin = document.querySelector('.navbar-collapse');
-      var ps2 = new PerfectScrollbar(fixedplugin);
+      let fixedplugin = document.querySelector('.navbar-collapse');
+      let ps2 = new PerfectScrollbar(fixedplugin);
     }
   }, []);
   return (
