@@ -1,4 +1,5 @@
 import React from 'react';
+import { ModalAddProduct } from '../../components/Inventory/ModalAddProduct';
 import { TableProducts } from '../../components/Inventory/TableProducts';
 
 export const InventoryProducts = () => {
@@ -10,7 +11,7 @@ export const InventoryProducts = () => {
           <p>lorem</p>
         </div>
         <div className="col-lg-6 text-right d-flex flex-column justify-content-center">
-          <button type="button" className="btn bg-gradient-primary mb-0 ms-lg-auto me-lg-0 me-auto mt-lg-0 mt-2">
+          <button type="button" className="btn bg-gradient-primary mb-0 ms-lg-auto me-lg-0 me-auto mt-lg-0 mt-2" data-bs-toggle="modal" data-bs-target="#newAddProduct">
             Agregar
           </button>
         </div>
@@ -25,6 +26,7 @@ export const InventoryProducts = () => {
           </div>
         </div>
       </div>
+      <ModalAddProduct />
     </>
   );
 };
