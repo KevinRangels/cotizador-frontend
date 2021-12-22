@@ -34,7 +34,17 @@ export const ModalAddProduct = () => {
                           </div>
                           <div className="col-md-3 mb-2">
                             <label>Medidas</label>
-                            <input className="multisteps-form__input form-control" type="text" />
+                            <div className="row">
+                              <div className="col-md-4">
+                                <input className="multisteps-form__input form-control" type="text" placeholder="Ancho" />
+                              </div>
+                              <div className="col-md-4">
+                                <input className="multisteps-form__input form-control" type="text" placeholder="Alto" />
+                              </div>
+                              <div className="col-md-4">
+                                <input className="multisteps-form__input form-control" type="text" placeholder="Largo" />
+                              </div>
+                            </div>
                           </div>
                           <div className="col-md-2 mb-2">
                             <label>Cantidad</label>

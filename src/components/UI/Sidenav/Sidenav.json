@@ -3,7 +3,7 @@
     {
       "name": "Dashboard",
       "route": "/dashboard",
-      "icon": "fas fa-tachometer-alt",
+      "icon": "fas fa-home",
       "type": 1
     },
     {

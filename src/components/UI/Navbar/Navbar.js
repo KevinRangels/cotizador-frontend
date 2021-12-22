@@ -25,6 +25,12 @@ export const Navbar = () => {
                 </div>
               </a>
             </li>
+            <li class="nav-item d-flex align-items-center">
+              <a href="../../pages/authentication/signin/illustration.html" class="nav-link font-weight-bold px-0" target="_blank">
+                <i class="fa fa-user me-sm-1" aria-hidden="true"></i>
+                <span class="d-sm-inline d-none">Sheldom</span>
+              </a>
+            </li>
             <li className="nav-item px-3 d-flex align-items-center">
               <a href="javascript:;" className="nav-link text-body p-0">
                 <i className="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
