@@ -30,7 +30,7 @@ export const Sidenav = () => {
       <div className="collapse navbar-collapse  w-auto h-auto max-height-vh-100 h-100" id="sidenav-collapse-main">
         <ul className="navbar-nav">
           {Buttons.btns.map((data, i) => (
-            <SidenavButton key={i} route={data.route} name={data.name} icon={data.icon} type={data.type} options={data.options} />
+            <SidenavButton key={i} route={data.route} name={data.name} icon={data.icon} type={data.type} options={data.options} id={data.id_dropdown} />
           ))}
           <li className="nav-item">
             <hr className="horizontal dark" />

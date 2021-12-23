@@ -17,6 +17,7 @@
       "route": "/cotizador",
       "icon": "fas fa-calculator",
       "type": 2,
+      "id_dropdown": "sidebar_quote",
       "options": [
         {
           "name": "Cotizador con puestos",
@@ -41,6 +42,7 @@
       "route": "/inventario",
       "icon": "fas fa-boxes",
       "type": 2,
+      "id_dropdown": "sidebar_inventary",
       "options": [
         {
           "name": "Materia Prima",
