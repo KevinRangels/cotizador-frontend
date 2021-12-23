@@ -1,0 +1,29 @@
+.productCard__counter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.productCard__counter button {
+  border-radius: 100%;
+  border: 1px solid;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4px;
+}
+.productCard__counter button i {
+  font-size: 0.6rem;
+  margin-bottom: 0;
+}
+.productCard__counter input {
+  height: 25px;
+  text-align: center;
+  width: 25%;
+  margin: 0 10px;
+  border: none;
+  background: #dedede;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
