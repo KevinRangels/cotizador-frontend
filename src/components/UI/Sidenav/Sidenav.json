@@ -7,9 +7,9 @@
       "type": 1
     },
     {
-      "name": "Configuraciones",
-      "route": "/configuraciones",
-      "icon": "fas fa-cogs",
+      "name": "Usuarios",
+      "route": "/usuarios",
+      "icon": "fas fa-users",
       "type": 1
     },
     {
@@ -32,10 +32,29 @@
       ]
     },
     {
-      "name": "Usuarios",
-      "route": "/usuarios",
-      "icon": "fas fa-users",
+      "name": "Punto de venta",
+      "route": "/pos",
+      "icon": "fas fa-cash-register",
       "type": 1
+    },
+    {
+      "name": "Línea de producción",
+      "route": "/linea-produccion",
+      "icon": "fas fa-network-wired",
+      "type": 2,
+      "id_dropdown": "sidebar_lineProduction",
+      "options": [
+        {
+          "name": "Estado de pedidos",
+          "route": "/produccion-pedidos",
+          "miniIcon": "PP"
+        },
+        {
+          "name": "Nueva Orden",
+          "route": "/produccion-nueva-orden",
+          "miniIcon": "PN"
+        }
+      ]
     },
     {
       "name": "Inventario",
@@ -57,21 +76,28 @@
       ]
     },
     {
-      "name": "Punto de venta",
-      "route": "/pos",
-      "icon": "fas fa-cash-register",
-      "type": 1
-    },
-    {
-      "name": "Contable",
+      "name": "Contabilidad",
       "route": "/contable",
       "icon": "fas fa-file-invoice-dollar",
-      "type": 1
+      "type": 2,
+      "id_dropdown": "sidebar_accounting",
+      "options": [
+        {
+          "name": "Clientes",
+          "route": "/contabilidad-clientes",
+          "miniIcon": "CC"
+        },
+        {
+          "name": "Reportes",
+          "route": "/contabilidad-reportes",
+          "miniIcon": "CR"
+        }
+      ]
     },
     {
-      "name": "Línea de producción",
-      "route": "/linea-produccion",
-      "icon": "fas fa-network-wired",
+      "name": "Configuraciones",
+      "route": "/configuraciones",
+      "icon": "fas fa-cogs",
       "type": 1
     }
   ]

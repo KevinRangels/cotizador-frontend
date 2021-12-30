@@ -17,6 +17,7 @@ export const TableProductsPos = () => {
         <thead class="thead-light">
           <tr>
             <th>Nombre</th>
+            <th>Categoría</th>
             <th>Material</th>
             <th>Medidas</th>
             <th>Stock</th>
@@ -36,6 +37,7 @@ export const TableProductsPos = () => {
                 </div>
               </div>
             </td>
+            <td class="text-sm">Navidad</td>
             <td class="text-sm">MDF</td>
             <td class="text-sm">100 X 100 cm</td>
             <td class="text-sm">10 piezas</td>
@@ -60,6 +62,7 @@ export const TableProductsPos = () => {
                 </div>
               </div>
             </td>
+            <td class="text-sm">Navidad</td>
             <td class="text-sm">MDF</td>
             <td class="text-sm">100 X 100 cm</td>
             <td class="text-sm">10 piezas</td>
@@ -84,6 +87,7 @@ export const TableProductsPos = () => {
                 </div>
               </div>
             </td>
+            <td class="text-sm">Navidad</td>
             <td class="text-sm">MDF</td>
             <td class="text-sm">30 X 30 cm</td>
             <td class="text-sm">34 piezas</td>
@@ -108,6 +112,7 @@ export const TableProductsPos = () => {
                 </div>
               </div>
             </td>
+            <td class="text-sm">Navidad</td>
             <td class="text-sm">MDF</td>
             <td class="text-sm">30 X 30 cm</td>
             <td class="text-sm">34 piezas</td>
@@ -132,6 +137,7 @@ export const TableProductsPos = () => {
                 </div>
               </div>
             </td>
+            <td class="text-sm">Navidad</td>
             <td class="text-sm">MDF</td>
             <td class="text-sm">30 X 30 cm</td>
             <td class="text-sm">34 piezas</td>
@@ -156,6 +162,7 @@ export const TableProductsPos = () => {
                 </div>
               </div>
             </td>
+            <td class="text-sm">Navidad</td>
             <td class="text-sm">MDF</td>
             <td class="text-sm">30 X 30 cm</td>
             <td class="text-sm">34 piezas</td>
@@ -180,6 +187,7 @@ export const TableProductsPos = () => {
                 </div>
               </div>
             </td>
+            <td class="text-sm">Navidad</td>
             <td class="text-sm">MDF</td>
             <td class="text-sm">30 X 30 cm</td>
             <td class="text-sm">34 piezas</td>
