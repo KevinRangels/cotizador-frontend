@@ -3,6 +3,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import { Footer } from '../components/UI/Footer';
 import { Navbar } from '../components/UI/Navbar/Navbar';
 import { Sidenav } from '../components/UI/Sidenav/Sidenav';
+import { ClientsScreen } from '../pages/Clients/ClientsScreen';
 import { ConfigurationsScreen } from '../pages/Configurations/ConfigurationsScreen';
 import { DashboardScreen } from '../pages/Dashboard/DashboardScreen';
 import { HomeScreen } from '../pages/Home/HomeScreen';
@@ -31,6 +32,7 @@ export const MainRouter = () => {
             <Route path="/pos" component={PosScreen} />
             <Route path="/inventario-materia-prima" component={InventoryRawMaterial} />
             <Route path="/inventario-productos" component={InventoryProducts} />
+            <Route path="/clientes" component={ClientsScreen} />
             {/* <Route exact path="/hero/:heroId" component={HeroScreen} />
       <Route exact path="/dc" component={DcScreen} />
       <Route exact path="/search" component={SearchScreen} /> */}

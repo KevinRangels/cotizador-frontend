@@ -84,7 +84,7 @@
       "options": [
         {
           "name": "Clientes",
-          "route": "/contabilidad-clientes",
+          "route": "/clientes",
           "miniIcon": "CC"
         },
         {
