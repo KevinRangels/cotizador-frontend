@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   return (
@@ -32,9 +33,9 @@ export const Navbar = () => {
               </a>
             </li>
             <li className="nav-item px-3 d-flex align-items-center">
-              <a href="javascript:;" className="nav-link text-body p-0">
+              <Link className="nav-link text-body p-0" to="/configuraciones">
                 <i className="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown pe-2 d-flex align-items-center">
               <a href="javascript:;" className="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
