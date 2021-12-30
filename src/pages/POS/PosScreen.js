@@ -1,5 +1,6 @@
 import React from 'react';
 import { PosResumeBuy } from '../../components/Pos/CounterProductCard/PosResumeBuy';
+import { ModalEditProductCart } from '../../components/Pos/ModalEditProductCart/ModalEditProductCart';
 import { ProductCard } from '../../components/Pos/ProductCard';
 import { TableProductsPos } from '../../components/Pos/TableProductsPos';
 
@@ -39,6 +40,7 @@ export const PosScreen = () => {
           </div>
         </div>
       </div>
+      <ModalEditProductCart />
     </>
   );
 };

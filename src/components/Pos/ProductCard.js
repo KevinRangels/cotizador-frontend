@@ -17,7 +17,13 @@ export const ProductCard = () => {
               <span className="">Total: 100.000 $</span>
             </div>
           </div>
-          <button class="btn btn-icon btn-sm productCard__btnEdit" type="button" data-tip="Editar productor agregado al carrito">
+          <button
+            class="btn btn-icon btn-sm productCard__btnEdit"
+            type="button"
+            data-tip="Editar productor agregado al carrito"
+            data-bs-toggle="modal"
+            data-bs-target="#editProductCart"
+          >
             <span class="btn-inner--icon">
               <i class="fas fa-edit x2"></i>
             </span>
