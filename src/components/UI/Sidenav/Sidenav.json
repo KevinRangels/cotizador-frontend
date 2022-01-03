@@ -20,8 +20,8 @@
       "id_dropdown": "sidebar_quote",
       "options": [
         {
-          "name": "Cotizador con puestos",
-          "route": "/cotizador-puesto",
+          "name": "Cotizador compuesto",
+          "route": "/cotizador-compuesto",
           "miniIcon": "C"
         },
         {
