@@ -4,6 +4,7 @@ import { ModalEditProductCart } from '../../components/Pos/ModalEditProductCart/
 import { Product } from '../../components/Pos/Product';
 import { ProductCard } from '../../components/Pos/ProductCard';
 import { TableProductsPos } from '../../components/Pos/TableProductsPos';
+import { Select } from '../../components/UI/Forms/Select';
 import { Pagination } from '../../components/UI/Pagination/Pagination';
 
 export const PosScreen = () => {
@@ -11,13 +12,22 @@ export const PosScreen = () => {
     <>
       <div className="row">
         <div className="col-lg-6">
-          <h4>Pos de ventas</h4>
+          <h4 className="mb-0">Pos de ventas</h4>
           <p>Realice la compra de productos en stock</p>
         </div>
         <div className="col-lg-6 text-right d-flex flex-column justify-content-center">
           <button type="button" className="btn bg-gradient-primary mb-0 ms-lg-auto me-lg-0 me-auto mt-lg-0 mt-2" data-bs-toggle="modal" data-bs-target="#newRawMaterial">
             Pagar
           </button>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-3">
+          <label>Buscar</label>
+          <input type="email" className="form-control" placeholder="Nombre, cod, precio" aria-label="Email" />
+        </div>
+        <div className="col-md-3">
+          <Select id="product__categories" label="Categorías" />
         </div>
       </div>
       <div class="row mt-4">
