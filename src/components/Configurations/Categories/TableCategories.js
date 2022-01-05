@@ -2,9 +2,19 @@ import React, { useEffect } from 'react';
 import { DataTable } from 'simple-datatables';
 
 export const TableCategories = () => {
+  useEffect(() => {
+    if (document.getElementById('categories-list')) {
+      new DataTable('#categories-list', {
+        searchable: true,
+        fixedHeight: false,
+        perPage: 2,
+      });
+    }
+  }, []);
+
   return (
     <div className="table-responsive">
-      <table className="table table-flush" id="clients-list">
+      <table className="table table-flush" id="categories-list">
         <thead className="thead-light">
           <tr>
             <th>Nombre</th>

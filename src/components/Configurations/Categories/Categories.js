@@ -1,127 +1,31 @@
 import React from 'react';
+import { ModalAddCategories } from './ModalAddCategories';
+import { TableCategories } from './TableCategories';
 
 export const Categories = () => {
   return (
-    <div class="card" id="categories">
-      <div class="card-header">
-        <h5>Notificaciones</h5>
-        <p class="text-sm">Choose how you receive notifications. These notification settings apply to the things you’re watching.</p>
-      </div>
-      <div class="card-body pt-0">
-        <div class="table-responsive">
-          <table class="table mb-0">
-            <thead>
-              <tr>
-                <th class="ps-1" colspan="4">
-                  <p class="mb-0">Activity</p>
-                </th>
-                <th class="text-center">
-                  <p class="mb-0">Email</p>
-                </th>
-                <th class="text-center">
-                  <p class="mb-0">Push</p>
-                </th>
-                <th class="text-center">
-                  <p class="mb-0">SMS</p>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="ps-1" colspan="4">
-                  <div class="my-auto">
-                    <span class="text-dark d-block text-sm">Mentions</span>
-                    <span class="text-xs font-weight-normal">Notify when another user mentions you in a comment</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" checked type="checkbox" id="flexSwitchCheckDefault11" />
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault12" />
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault13" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="ps-1" colspan="4">
-                  <div class="my-auto">
-                    <span class="text-dark d-block text-sm">Comments</span>
-                    <span class="text-xs font-weight-normal">Notify when another user comments your item.</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" checked type="checkbox" id="flexSwitchCheckDefault14" />
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" checked type="checkbox" id="flexSwitchCheckDefault15" />
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault16" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="ps-1" colspan="4">
-                  <div class="my-auto">
-                    <span class="text-dark d-block text-sm">Follows</span>
-                    <span class="text-xs font-weight-normal">Notify when another user follows you.</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault17" />
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" checked type="checkbox" id="flexSwitchCheckDefault18" />
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault19" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="ps-1" colspan="4">
-                  <div class="my-auto">
-                    <p class="text-sm mb-0">Log in from a new device</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" checked type="checkbox" id="flexSwitchCheckDefault20" />
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" checked type="checkbox" id="flexSwitchCheckDefault21" />
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-switch mb-0 d-flex align-items-center justify-content-center">
-                    <input class="form-check-input" checked type="checkbox" id="flexSwitchCheckDefault22" />
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <>
+      <div class="card" id="categories">
+        <div class="card-header">
+          <div class="d-lg-flex">
+            <div>
+              <h5>Categorías</h5>
+              {/* <p class="text-sm">Choose how you receive notifications. These notification settings apply to the things you’re watching.</p> */}
+            </div>
+            <div class="ms-auto my-auto mt-lg-0 mt-4">
+              <div class="ms-auto my-auto">
+                <button type="button" class="btn bg-gradient-primary btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#addCategory">
+                  +&nbsp; Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body pt-0">
+          <TableCategories />
         </div>
       </div>
-    </div>
+      <ModalAddCategories />
+    </>
   );
 };

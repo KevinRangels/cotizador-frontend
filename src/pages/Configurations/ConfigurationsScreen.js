@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BasicInfo } from '../../components/Configurations/BasicInfo/BasicInfo';
 import { Categories } from '../../components/Configurations/Categories/Categories';
-import { MenuConfigurations } from '../../components/Configurations/Categories/MenuConfigurations';
+import { MenuConfigurations } from '../../components/Configurations/MenuConfigurations';
 import { ChangePassword } from '../../components/Configurations/ChangePassword/ChangePassword';
 import { Notifications } from '../../components/Configurations/Notifications/Notifications';
 
@@ -27,8 +27,8 @@ export const ConfigurationsScreen = () => {
           <div class="col-lg-9 mt-lg-0">
             {menuSelected === 'basic-info' && <BasicInfo />}
             {menuSelected === 'password' && <ChangePassword />}
-            {menuSelected === 'categories' && <Notifications />}
-            {menuSelected === 'notifications' && <Categories />}
+            {menuSelected === 'categories' && <Categories />}
+            {menuSelected === 'notifications' && <Notifications />}
           </div>
         </div>
       </div>

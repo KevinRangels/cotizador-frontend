@@ -1,8 +1,10 @@
 import React from 'react';
 import { PosResumeBuy } from '../../components/Pos/CounterProductCard/PosResumeBuy';
 import { ModalEditProductCart } from '../../components/Pos/ModalEditProductCart/ModalEditProductCart';
+import { Product } from '../../components/Pos/Product';
 import { ProductCard } from '../../components/Pos/ProductCard';
 import { TableProductsPos } from '../../components/Pos/TableProductsPos';
+import { Pagination } from '../../components/UI/Pagination/Pagination';
 
 export const PosScreen = () => {
   return (
@@ -20,12 +22,24 @@ export const PosScreen = () => {
       </div>
       <div class="row mt-4">
         <div class="col-lg-8">
-          <div class="card h-100">
+          <div className="row">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((e) => (
+              <div className="col-md-3">
+                <Product />
+              </div>
+            ))}
+          </div>
+          <div className="row">
+            <div className="d-flex justify-content-end">
+              <Pagination />
+            </div>
+          </div>
+          {/* <div class="card h-100">
             <div class="card-body">
               <h5 class="font-weight-bolder">Lista de productos</h5>
               <TableProductsPos />
             </div>
-          </div>
+          </div> */}
         </div>
         <div class="col-lg-4">
           <div class="card h-100">

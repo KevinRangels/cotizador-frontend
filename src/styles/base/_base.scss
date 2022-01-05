@@ -37,3 +37,10 @@
   color: color-yiq(#4912b2);
   background-color: #4912b2;
 }
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #3f0097;
+  outline: 0;
+  box-shadow: 0 0 0 2px #3f0097;
+}

@@ -18,7 +18,7 @@ export const ProductCard = () => {
             </div>
           </div>
           <button
-            class="btn btn-icon btn-sm productCard__btnEdit"
+            class="btn btn-icon btn-sm productCard__btnEdit w-25 d-flex justify-content-center align-items-center"
             type="button"
             data-tip="Editar productor agregado al carrito"
             data-bs-toggle="modal"
