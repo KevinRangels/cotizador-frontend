@@ -26,7 +26,7 @@ export const MainRouter = () => {
             <Route path="/dashboard" component={DashboardScreen} />
             <Route path="/configuraciones" component={ConfigurationsScreen} />
             <Route path="/usuarios" component={UsersScreen} />
-            <Route path="/cotizador-puesto" component={QuoteByPositionScreen} />
+            <Route path="/cotizador-compuesto" component={QuoteByPositionScreen} />
             <Route path="/cotizador-productos" component={QuoteProductsScreen} />
 
             <Route path="/pos" component={PosScreen} />
